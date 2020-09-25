@@ -17,10 +17,3 @@ To run this analysis the following files are needed from the `/data` file:
 
 5. `data_Properties.RData` adds physicochemical properties of each metal;
 
-
-
-
-
-1. `.csv` files with the data `data_herb` (here amound of herbicides used for each crop)
-2. Shapefile of provincial boundaries for the Canadian Prairies `prov_bound`
-3. landUseRaster is a `.RData` file (lu_rs) as a `RasterBrick` where each layer represent one crop
