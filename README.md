@@ -15,5 +15,18 @@ To run this analysis the following files are needed from the `/data` file:
 
 4. `data_physicochem.RData` adds different water parameters (pH, hardness, temp) of the toxicity tests;
 
-5. `data_Properties.RData` adds physicochemical properties of each metal;
+5. `data_Properties.RData` adds physicochemical properties of each metal.
+
+
+# Phylogenetic tree  
+
+Multiple sequence alignment was performed for each gene using Muscle version 3.8.31. Individual genes were concatenated in a single super- alignment. Phylogenetic trees were based on the analysis of nucleotides with a maximum likelihood (ML) method. The branch support of the tree was assessed by 1000 bootstrap replicates. The majority consensus tree obtained from the bootstraps. The tree for all 33 species for which geentic data were collected looking like this:
+
+
+![phylo_tree](phylo_tree.jpeg)
+
+
+
+Statistical support values are provided above each node (as a percentage). Asterisks denote nodes that received 100% bootstrap support. Nodes with support values less than 50% were collapsed.
+
 
