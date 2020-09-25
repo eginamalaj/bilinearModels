@@ -33,11 +33,12 @@ To evaluate the ability of the model to make accurate predictions, a leave-one-o
 
 1. removing one species *i* 
 2. re-building the bilinear model for the *n−1* remaining species following:
-```
-⟨Yexp⟩=(Z⊗U)⟨B⟩+⟨E⟩
 
-where ‹…› denotes the lexicographic concatenation (unfolding) of the columns of a matrix into a single column vector, ⊗ is the Kronecker product, **Z** is a matrix of size (*j* × *l*), where *j* represents the metal and *l* represents the physicochemical properties, **U** is the influence matrix of size (*i* × *k*), *i* being the species and *k* representing the eigenvectors, **B** is a matrix of bilinear regression coefficients, and **E** is a matrix of error terms 
+>```
+⟨Yexp⟩=(Z⊗U)⟨B⟩+⟨E⟩
 ```
+>where ‹…› denotes the lexicographic concatenation (unfolding) of the columns of a matrix into a single column vector, ⊗ is the Kronecker product, **Z** is a matrix of size (*j* × *l*), where *j* represents the metal and *l* represents the physicochemical properties, **U** is the influence matrix of size (*i* × *k*), *i* being the species and *k* representing the eigenvectors, **B** is a matrix of bilinear regression coefficients, and **E** is a matrix of error terms 
+
 
 3. predicting the LC50 value for species *i* (Eq. 2)
 4. quantifying the difference between the predicted and experimental values for species *i*
