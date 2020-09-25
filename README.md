@@ -22,8 +22,7 @@ To run this analysis the following files are needed from the `/data` file:
 
 Multiple sequence alignment was performed for each gene using Muscle version 3.8.31. Individual genes were concatenated in a single super- alignment. Phylogenetic trees were based on the analysis of nucleotides with a maximum likelihood (ML) method. The branch support of the tree was assessed by 1000 bootstrap replicates. The majority consensus tree obtained from the bootstraps. The tree for all 33 species for which geentic data were collected looking like this:
 
-
-![phylo_tree](phylo_tree.jpeg)
+![Phylogenetic tree](../bilinearModels/data/pics/phylo_tree.jpeg)
 
 
 
