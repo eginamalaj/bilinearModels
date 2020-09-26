@@ -46,11 +46,10 @@ To evaluate the ability of the model to make accurate predictions, a leave-one-o
 
 3. Predicting the LC50 value for species *i*:
 
-\begin{equation}
+
 ```
  Y~pred=U~target Z^T B
 ```
-\end{equation}
 
 
 4. Quantifying the difference between the predicted and experimental values for species *i*
