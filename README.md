@@ -5,9 +5,7 @@ This file contains the R code published with the article:
 **Malaj, E.**, Guénard, G., Schäfer, R.B., and von der Ohe, P.C. (2016). Evolutionary patterns and physicochemical properties explain macroinvertebrate sensitivity to heavy metals. *Ecological Application* 26(4), 1249-1259.
 
 
-Guillaum Guénard and collegues created the R Package MPSEM which is used to generate Phylogenetic Eigenvector Maps (PEM). The main paper explaining the published methodology can be found here: 
-
-Guénard, G., Legendre, P., and Peres‐Neto, P. (2013). Phylogenetic eigenvector maps (PEM): a framework to model and predict species traits. *Methods in Ecology and Evolution* 4(12), 1120-1131.
+Guillaum Guénard and collegues created the R Package MPSEM which is used to generate Phylogenetic Eigenvector Maps (PEM). The main paper explaining the published methodology can be found here: Guénard, G., Legendre, P., and Peres‐Neto, P. (2013). Phylogenetic eigenvector maps (PEM): a framework to model and predict species traits. *Methods in Ecology and Evolution* 4(12), 1120-1131.
 
 Summarized, in this work bilinear models integrating phylogenetic information of species and physicochemical properties of metals allowed to predict species sensitivity to chemicals. Combining the molecular information (DNA sequences) of 31 invertebrate species with the physicochemical properties of six bivalent metals, we built bilinear models that explained 70–80% of the variability in species sensitivity to metals. Phylogeny was the most important component of the bilinear models, as it explained the major part of the explained variance (>40%). Predicted values from bilinear modeling were in agreement with experimental values (>50%); therefore, this approach is a good starting point to build statistical models, which can potentially predict heavy metal toxicity for untested invertebrate species based on empirical values for similar species. 
 
