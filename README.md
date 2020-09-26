@@ -37,27 +37,21 @@ To evaluate the ability of the model to make accurate predictions, a leave-one-o
 1. Removing one species *i* 
 2. Re-building the bilinear model for the *n−1* remaining species following:
 
-```
-⟨Yexp⟩=(Z⊗U)⟨B⟩+⟨E⟩
-```
+$$\langle Y \rangle\ {exp} = (Z \otimes U) \langle B \rangle+\langle E \rangle$$
 
 > where ‹…› denotes the lexicographic concatenation (unfolding) of the columns of a matrix into a single column vector, ⊗ is the Kronecker product, **Z** is a matrix of size (*j* × *l*), where *j* represents the metal and *l* represents the physicochemical properties, **U** is the influence matrix of size (*i* × *k*), *i* being the species and *k* representing the eigenvectors, **B** is a matrix of bilinear regression coefficients, and **E** is a matrix of error terms. 
 
 
-3. Predicting the LC50 value for species *i*:
+3. Predicting the LC50 value for species *i*: Y~pred~ = U~target~BZ^T^ 
 
-
-```
- Y~pred=U~target Z^T B
-```
-
+> where **B** is a bilinear coefficient matrix, **U~target~** is thew calculated new (target) score matrix based on the position of the untested species in the phylogenetic tree, and **Z^T^** is the transposed matrix of **Z**.
 
 4. Quantifying the difference between the predicted and experimental values for species *i*
 
 ![obs_vs_pred](https://user-images.githubusercontent.com/54320408/94323902-bbb8af00-ff54-11ea-95ca-6807a8822bc4.png)
 
 
-Relationships between the experimental and predicted median lethal concentration (log10 LC50 in μg/L) for leave-one out cross-validation (A with four metals model and B with six metal model). The dashed line is the 1:1 relationship that represents the perfect prediction by the model, and the solid line is the regression line. The prediction coefficient (q2) demonstrates the accuracy of the predicted values and it is calculated as:
+In the figure, the relationships between the experimental and predicted median lethal concentration (log10 LC50 in μg/L) for leave-one out cross-validation (A with four metals model and B with six metal model) is given. The dashed line is the 1:1 relationship that represents the perfect prediction by the model, and the solid line is the regression line. The prediction coefficient (q^2^) demonstrates the accuracy of the predicted values and it is calculated as:
 
 
 
