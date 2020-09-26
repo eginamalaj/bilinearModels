@@ -53,7 +53,7 @@ Y<sub>pred</sub> = U<sub>target</sub>BZ<sup>T</sup>
 ![obs_vs_pred](https://user-images.githubusercontent.com/54320408/94323902-bbb8af00-ff54-11ea-95ca-6807a8822bc4.png)
 
 
-In the figure above, the relationships between the experimental and predicted median lethal concentration (log10 LC50 in μg/L) for leave-one out cross-validation (A with four metals model and B with six metal model) is given. The dashed line is the 1:1 relationship that represents the perfect prediction by the model, and the solid line is the regression line. The prediction coefficient (q<sub>2</sub>) demonstrates the accuracy of the predicted values.
+In the figure above, the relationships between the experimental and predicted median lethal concentration (log10 LC50 in μg/L) for leave-one out cross-validation (A with four metals model and B with six metal model) is given. The dashed line is the 1:1 relationship that represents the perfect prediction by the model, and the solid line is the regression line. The prediction coefficient (q<sup>2</sup>) demonstrates the accuracy of the predicted values.
 
 
 
