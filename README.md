@@ -45,7 +45,7 @@ To evaluate the ability of the model to make accurate predictions, a leave-one-o
 
 3. Predicting the LC50 value for species *i*: 
 
-Y<sub>2</sub> = UtargetBZT 
+Y<sub>pred</sub> = U<sub>target</sub>BZ<sup>T</sup>
 
 > where **B** is a bilinear coefficient matrix, **Utarget** is thew calculated new (target) score matrix based on the position of the untested species in the phylogenetic tree, and **Z^T^** is the transposed matrix of **Z**.
 
