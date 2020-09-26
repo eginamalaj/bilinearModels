@@ -39,16 +39,15 @@ To evaluate the ability of the model to make accurate predictions, a leave-one-o
 
 ```
 ⟨Yexp⟩=(Z⊗U)⟨B⟩+⟨E⟩
-
-> where ‹…› denotes the lexicographic concatenation (unfolding) of the columns of a matrix into a single column vector, ⊗ is the Kronecker product, **Z** is a matrix of size (*j* × *l*), where *j* represents the metal and *l* represents the physicochemical properties, **U** is the influence matrix of size (*i* × *k*), *i* being the species and *k* representing the eigenvectors, **B** is a matrix of bilinear regression coefficients, and **E** is a matrix of error terms. 
 ```
+> where ‹…› denotes the lexicographic concatenation (unfolding) of the columns of a matrix into a single column vector, ⊗ is the Kronecker product, **Z** is a matrix of size (*j* × *l*), where *j* represents the metal and *l* represents the physicochemical properties, **U** is the influence matrix of size (*i* × *k*), *i* being the species and *k* representing the eigenvectors, **B** is a matrix of bilinear regression coefficients, and **E** is a matrix of error terms. 
+
 
 3. Predicting the LC50 value for species *i*: 
 ```
-Y<sub>pred</sup> = UtargetBZT 
-
-> where **B** is a bilinear coefficient matrix, **Utarget** is thew calculated new (target) score matrix based on the position of the untested species in the phylogenetic tree, and **Z^T^** is the transposed matrix of **Z**.
+Y<sub>pred</sub> = UtargetBZT 
 ```
+> where **B** is a bilinear coefficient matrix, **Utarget** is thew calculated new (target) score matrix based on the position of the untested species in the phylogenetic tree, and **Z^T^** is the transposed matrix of **Z**.
 
 4. Quantifying the difference between the predicted and experimental values for species *i*
 
