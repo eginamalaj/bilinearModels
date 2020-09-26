@@ -48,7 +48,7 @@ To evaluate the ability of the model to make accurate predictions, a leave-one-o
 
 \begin{equation}
 ```
- $$Y\pred=U\target Z^T B$$
+ Y~pred=U~target Z^T B
 ```
 \end{equation}
 
